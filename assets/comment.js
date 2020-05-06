@@ -1,12 +1,19 @@
-var bossSound = 'Meozzz';
-var bossAge = 2;
+// Các hàm built-in
 
-//bossSound = 'Cạp cạp';
+var fullName = 'Hoang Ngoc Hieu';
 
-/*
-bossAge = 4;
+alert(fullName);
 
-bossSound = 'Gâu Gâu'
+var message = 'Học về built-in functions trong JS';
 
-bossAge = 8;
- */
+var warnMessage = 'Đây là message cảnh báo';
+
+var errorMessage = 'Đây là message lỗi';
+
+console.log(message);
+
+console.warn(warnMessage);
+
+console.error(errorMessage);
+
+/* Built-in function nghĩa là hàm cài sẵn, chức năng lập sẵn. Hiểu đơn giản là những hàm được tích hợp sẵn trong ngôn ngữ lập trình. */
