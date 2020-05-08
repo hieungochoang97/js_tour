@@ -17,3 +17,7 @@ function run(bookCoin, userCoin) {
     }
 
 }
+
+run(700, 50);
+
+console.log(run(700, 50));
