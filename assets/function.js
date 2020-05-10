@@ -161,3 +161,21 @@ function stringInString(needle, haystack) {
 }
 var c = stringInString('Javascript', 'Học Javascript tại F8');
 console.log(c);
+
+// Cac loai function
+/**
+ * 1. Declaration function
+ * 2. Expression function
+ * 3. Arrow function
+ */
+
+ function showGame() {
+     console.log('Declaration function');
+ }
+
+ var showGame2 = function() {
+    console.log('Expression function');
+ }
+
+
+ showGame2();
