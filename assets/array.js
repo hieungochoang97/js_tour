@@ -132,4 +132,4 @@ console.log('========================');
 var course = courses.filter(function(course, index) {
     return course.name === 'Nguyen Minh Hieu';
 })
-console.log(course);
+console.log(course); 
