@@ -30,3 +30,29 @@ console.log(myInfo.getName());
 
 // function --> phuong thuc / method
 // other --> thuoc tinh / property
+
+
+console.log('-----------------------------')
+// Object constructor
+
+var User = function(firstName, lastName, avatar) {
+    this.firstName = firstName;
+    this.lastName = lastName;
+    this.avatar = avatar;
+
+    this.getName = function () {
+        return `${this.firstName} ${this.lastName}`
+    }
+}
+
+var author = new User ('Hieu', 'Hoang', 'Avatar');
+var user = new User ('Hieu', 'Minh', 'Avatar');
+
+
+author.title = 'Tu hoc javascript';
+user.comment = 'Co gang len nao!!!!'
+
+console.log(author);
+console.log(user);
+
+console.log(author.getName());
