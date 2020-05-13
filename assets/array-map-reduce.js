@@ -67,22 +67,86 @@ var courses = [
 // }
 // console.log(totalcoin);
 
-var i = 0;
+// var i = 0;
 
-function coinHandler(accumulator, currentValue, currentIndex, originArray) {
-    i++;
+// var totalCoin = courses.reduce(function (total, course) {
+//     return total + course.coin;
+// }, 0);
 
-    var total = accumulator + currentValue.coin;
+// console.log(totalCoin);
 
-    console.table({
-        'luot chay:': i,
-        'bien tich tru:': accumulator,
-        'Gia khoa hoc:': currentValue.coin,
-    });
-    console.log(currentValue);
 
-    return accumulator + currentValue.coin;
-}
+var number = [100, 200, 300, 400 ,500, 600];
 
-var tootalCoin = courses.reduce(coinHandler, 0);
-console.log(tootalCoin);
+var totalCoin = number.reduce(function (total, number) {
+    return total + number;
+}, 0);
+
+console.log(totalCoin);
+
+
+
+
+
+// bai tap co ban 
+
+// flat - Làm phẳng mảng từ Depth array - 'mảng sâu' 
+
+var depthArray = [1, 2, [3, 4], 5, 6, [7, 8, 9]];
+
+var flatArray = depthArray.reduce(function (flatOut, depthItem) {
+    return flatOut.concat(depthItem);
+}, []); 
+
+// console.log(flatArray);
+
+
+// lấy ra các khóa học và đưa vào mảng mới
+
+var topics = [
+    {
+        topic: 'Front-End',
+        courses: [
+            {
+            id: 1,
+            title: 'HMTL, CSS'
+            },
+            {
+                id: 2,
+                title: 'JS'
+            }
+        ],
+    },
+    {
+        topic: 'Back-end',
+        courses: [
+            {
+            id: 3,
+            title: 'PHP'
+            },
+            {
+                id: 4,
+                title: 'React native'
+            }
+        ],
+    },
+];
+
+
+// note
+
+var newCourses = topics.reduce(function (courses, topic) {
+    return courses.concat(topic.courses);
+}, []);
+
+console.log(newCourses);
+
+var html = newCourses.map(function (course) {
+    return `
+        <div><h2>${course.title}</h2>
+        <p>${course.id}</p>
+        </div>
+    `;
+});
+
+console.log(html.join(''));
