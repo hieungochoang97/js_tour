@@ -103,26 +103,50 @@
 // }
 
 
-// // White loop
+// White loop
+
+// var i = 0;
+
+// while (i <= 20) {
+//     i++;
+//     console.log(i);
+// }
+
+/**=========================================== */
+
+// var myArr = [
+//     'JS',
+//     'HMTL',
+//     'CSS'
+// ];
+
+// var i = 0;
+
+// while (i < myArr.length) {
+//     console.log(myArr[i]);
+//     i++;
+// }
+
+
+// do/while loop
 
 var i = 0;
 
-while (i <= 20) {
+do {
     i++;
     console.log(i);
-}
+} while (i < 10);
 
-// // /**=========================================== */
-
-var myArr = [
-    'JS',
-    'HMTL',
-    'CSS'
-];
-
+/**=========================================== */
 var i = 0;
+var isSuccess = false;
 
-while (i < myArr.length) {
-    console.log(myArr[i]);
+do {
     i++;
-}
+
+    console.log('Nap the lan +', i);
+
+    if (false) {
+        isSuccess = true;
+    }
+} while (!isSuccess && i <= 3);
