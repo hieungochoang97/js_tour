@@ -130,23 +130,44 @@
 
 // do/while loop
 
-var i = 0;
+// var i = 0;
 
-do {
-    i++;
+// do {
+//     i++;
+//     console.log(i);
+// } while (i < 10);
+
+// /**=========================================== */
+// var i = 0;
+// var isSuccess = false;
+
+// do {
+//     i++;
+
+//     console.log('Nap the lan +', i);
+
+//     if (false) {
+//         isSuccess = true;
+//     }
+// } while (!isSuccess && i <= 3);
+
+
+//Break & continue in loop 
+
+
+//break
+for (var i = 0; i <= 10; i++) {
     console.log(i);
-} while (i < 10);
 
-/**=========================================== */
-var i = 0;
-var isSuccess = false;
-
-do {
-    i++;
-
-    console.log('Nap the lan +', i);
-
-    if (false) {
-        isSuccess = true;
+    if ( i >= 5) {
+        break;
     }
-} while (!isSuccess && i <= 3);
+}
+
+//continue
+for (var i = 0; i <= 10; i++) {
+    if (i %2 !== 0) {
+        continue;
+    }
+    console.log(i);
+}
