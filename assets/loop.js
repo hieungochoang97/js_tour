@@ -32,36 +32,72 @@
 
 // For/in loop
 
-var myInfo = {
-    name: 'Ngoc hieu',
-    age: 23
-}
-for (var key in myInfo) {
-    console.log(key);
-    console.log(myInfo[key]);
-}
+// var myInfo = {
+//     name: 'Ngoc hieu',
+//     age: 23
+// }
+// for (var key in myInfo) {
+//     console.log(key);
+//     console.log(myInfo[key]);
+// }
 
-/**=========================================== */
+// /**=========================================== */
+
+// var languages = [
+//     'JS',
+//     'HTML',
+//     'CSS'
+// ];
+
+// for (var key in languages) {
+//     console.log(key);
+//     console.log(languages[key]);
+// }
+
+
+// /**=========================================== */
+
+// var myString = 'Javascript';
+
+// console.log(myString);
+
+// for (var key in myString) {
+//     // console.log(key);
+//     console.log(myString[key]);
+// }
+
+
+// For/of loop
 
 var languages = [
-    'JS',
-    'HTML',
+    'Javascript',
+    'HMTL',
     'CSS'
-];
+]
 
-for (var key in languages) {
-    console.log(key);
-    console.log(languages[key]);
+for (var value of languages) {
+    console.log(value);
 }
 
+// /**=========================================== */
 
-/**=========================================== */
+var myString = 'ABCDEF';
 
-var myString = 'Javascript';
+for (var value of myString) {
+    console.log(value);
+}
 
-console.log(myString);
+// /**=========================================== */
 
-for (var key in myString) {
-    // console.log(key);
-    console.log(myString[key]);
+var myInfo = {
+    name: 'Ngoc Hieu',
+    age: 23
+};
+
+for (var value of Object.keys(myInfo)) {
+    console.log(value);
+}
+
+for (var value of Object.values(myInfo)) {
+    console.log(value);
 }
