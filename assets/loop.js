@@ -69,35 +69,60 @@
 
 // For/of loop
 
-var languages = [
-    'Javascript',
+// var languages = [
+//     'Javascript',
+//     'HMTL',
+//     'CSS'
+// ]
+
+// for (var value of languages) {
+//     console.log(value);
+// }
+
+// // /**=========================================== */
+
+// var myString = 'ABCDEF';
+
+// for (var value of myString) {
+//     console.log(value);
+// }
+
+// // /**=========================================== */
+
+// var myInfo = {
+//     name: 'Ngoc Hieu',
+//     age: 23
+// };
+
+// for (var value of Object.keys(myInfo)) {
+//     console.log(value);
+// }
+
+// for (var value of Object.values(myInfo)) {
+//     console.log(value);
+// }
+
+
+// // White loop
+
+var i = 0;
+
+while (i <= 20) {
+    i++;
+    console.log(i);
+}
+
+// // /**=========================================== */
+
+var myArr = [
+    'JS',
     'HMTL',
     'CSS'
-]
+];
 
-for (var value of languages) {
-    console.log(value);
-}
+var i = 0;
 
-// /**=========================================== */
-
-var myString = 'ABCDEF';
-
-for (var value of myString) {
-    console.log(value);
-}
-
-// /**=========================================== */
-
-var myInfo = {
-    name: 'Ngoc Hieu',
-    age: 23
-};
-
-for (var value of Object.keys(myInfo)) {
-    console.log(value);
-}
-
-for (var value of Object.values(myInfo)) {
-    console.log(value);
+while (i < myArr.length) {
+    console.log(myArr[i]);
+    i++;
 }
