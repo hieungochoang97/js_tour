@@ -10,146 +10,146 @@
 
  // for loop
 
-//  for (var i = 1; i <= 20; i++) {
-//      console.log(i);
-//  }
+ for (var i = 1; i <= 20; i++) {
+     console.log(i);
+ }
 
 
-// var myArray = [
-//     'Javascript',
-//     'Html',
-//     'Css',
-//     'Dart',
-//     'Ruby',
-//     'Python'
-// ];
-// var arrayLength = myArray.length;
-// for (i = 0; i < arrayLength; i++) {
-//     console.log(myArray[i]);
-// }
+var myArray = [
+    'Javascript',
+    'Html',
+    'Css',
+    'Dart',
+    'Ruby',
+    'Python'
+];
+var arrayLength = myArray.length;
+for (i = 0; i < arrayLength; i++) {
+    console.log(myArray[i]);
+}
 
 /**=========================================== */
 
 // For/in loop
 
-// var myInfo = {
-//     name: 'Ngoc hieu',
-//     age: 23
-// }
-// for (var key in myInfo) {
-//     console.log(key);
-//     console.log(myInfo[key]);
-// }
+var myInfo = {
+    name: 'Ngoc hieu',
+    age: 23
+}
+for (var key in myInfo) {
+    console.log(key);
+    console.log(myInfo[key]);
+}
 
-// /**=========================================== */
+/**=========================================== */
 
-// var languages = [
-//     'JS',
-//     'HTML',
-//     'CSS'
-// ];
+var languages = [
+    'JS',
+    'HTML',
+    'CSS'
+];
 
-// for (var key in languages) {
-//     console.log(key);
-//     console.log(languages[key]);
-// }
+for (var key in languages) {
+    console.log(key);
+    console.log(languages[key]);
+}
 
 
-// /**=========================================== */
+/**=========================================== */
 
-// var myString = 'Javascript';
+var myString = 'Javascript';
 
-// console.log(myString);
+console.log(myString);
 
-// for (var key in myString) {
-//     // console.log(key);
-//     console.log(myString[key]);
-// }
+for (var key in myString) {
+    // console.log(key);
+    console.log(myString[key]);
+}
 
 
 // For/of loop
 
-// var languages = [
-//     'Javascript',
-//     'HMTL',
-//     'CSS'
-// ]
+var languages = [
+    'Javascript',
+    'HMTL',
+    'CSS'
+]
 
-// for (var value of languages) {
-//     console.log(value);
-// }
+for (var value of languages) {
+    console.log(value);
+}
 
-// // /**=========================================== */
+// /**=========================================== */
 
-// var myString = 'ABCDEF';
+var myString = 'ABCDEF';
 
-// for (var value of myString) {
-//     console.log(value);
-// }
+for (var value of myString) {
+    console.log(value);
+}
 
-// // /**=========================================== */
+// /**=========================================== */
 
-// var myInfo = {
-//     name: 'Ngoc Hieu',
-//     age: 23
-// };
+var myInfo = {
+    name: 'Ngoc Hieu',
+    age: 23
+};
 
-// for (var value of Object.keys(myInfo)) {
-//     console.log(value);
-// }
+for (var value of Object.keys(myInfo)) {
+    console.log(value);
+}
 
-// for (var value of Object.values(myInfo)) {
-//     console.log(value);
-// }
+for (var value of Object.values(myInfo)) {
+    console.log(value);
+}
 
 
 // White loop
 
-// var i = 0;
+var i = 0;
 
-// while (i <= 20) {
-//     i++;
-//     console.log(i);
-// }
+while (i <= 20) {
+    i++;
+    console.log(i);
+}
 
 /**=========================================== */
 
-// var myArr = [
-//     'JS',
-//     'HMTL',
-//     'CSS'
-// ];
+var myArr = [
+    'JS',
+    'HMTL',
+    'CSS'
+];
 
-// var i = 0;
+var i = 0;
 
-// while (i < myArr.length) {
-//     console.log(myArr[i]);
-//     i++;
-// }
+while (i < myArr.length) {
+    console.log(myArr[i]);
+    i++;
+}
 
 
 // do/while loop
 
-// var i = 0;
+var i = 0;
 
-// do {
-//     i++;
-//     console.log(i);
-// } while (i < 10);
+do {
+    i++;
+    console.log(i);
+} while (i < 10);
 
 // /**=========================================== */
-// var i = 0;
-// var isSuccess = false;
+var i = 0;
+var isSuccess = false;
 
-// do {
-//     i++;
+do {
+    i++;
 
-//     console.log('Nap the lan +', i);
+    console.log('Nap the lan +', i);
 
-//     if (false) {
-//         isSuccess = true;
-//     }
-// } while (!isSuccess && i <= 3);
+    if (false) {
+        isSuccess = true;
+    }
+} while (!isSuccess && i <= 3);
 
 
 //Break & continue in loop 
@@ -171,3 +171,18 @@ for (var i = 0; i <= 10; i++) {
     }
     console.log(i);
 }
+
+
+//Nested loop 
+
+var myArray = [
+    [1, 2],
+    [2, 3],
+    [4, 5]
+];
+
+for (var i = 0; i < myArray.length; i++) {
+    for (var j = 0; j < myArray[i].length; j++) {
+        console.log(myArray[i][j]);
+    }
+};
